@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta name="description" content="CPS Forum, CPSWEEK, San Francisco, April 2009 Collaboration &amp; Virtualizationin Cyber-Physical Systems Christoph KirschUniversität Salzburg The JAviator  javiator.cs.uni-salzburg.at 40min flight time @ 2.2kg 2kg additional payload capacity minimal number of distinct parts Automatic Attitude &amp; Altitude Control(Many thanks to the STARMAC team!) Virtualization Non-trivial physical systems including digital computers are non-linear systems Traditional virtualization technology enables concurrency through spatial isolation machine registers, linear address space, ... Virtualization may linearize all aspects of physical systems space, time, energy, reliability, ... Collaboration Cyber-physical systems are networked on many different levels physical, economical, social, ... Traditional network designs focus on communication client-server model, P2P networks, ... Real strengths of networks is in collaboration aggregation of information [RTAS09] Uncertainty in Software Uncertainty = infinite environments/platforms Traditional software enjoys the certainty of finite environments/platforms Real strength of software is flexibility but semantics of change is difficult patch software at runtime only if patch could have been applied already at compile time (if the patch had been known) [APRES08] virtualization enables runtime patching Scalable Collaboration+Virtualization of Everything=Cyber-Physical Systems? Thank you"/>
+    <title></title>
+    <script type="text/javascript" language="javascript">
+//      <![CDATA[
+            var images = new Array (10);
+            images[0] = "CPS-Forum-2009_files/CPS-Forum-2009.001.jpg";
+            images[1] = "CPS-Forum-2009_files/CPS-Forum-2009.002.jpg";
+            images[2] = "CPS-Forum-2009_files/CPS-Forum-2009.003.jpg";
+            images[3] = "CPS-Forum-2009_files/CPS-Forum-2009.004.jpg";
+            images[4] = "CPS-Forum-2009_files/CPS-Forum-2009.005.jpg";
+            images[5] = "CPS-Forum-2009_files/CPS-Forum-2009.006.jpg";
+            images[6] = "CPS-Forum-2009_files/CPS-Forum-2009.007.jpg";
+            images[7] = "CPS-Forum-2009_files/CPS-Forum-2009.008.jpg";
+            images[8] = "CPS-Forum-2009_files/CPS-Forum-2009.009.jpg";
+            images[9] = "CPS-Forum-2009_files/CPS-Forum-2009.010.jpg";
+            var index = 0;
+            function WindowLoaded(evt)
+            {
+                document.body.onselectstart = function () { return false; };
+            }
+            function Step(i)
+            {
+                GoTo(index + i)
+            }
+            function GoTo(newIndex)
+            {
+                if(newIndex >= 0 && newIndex < images.length)
+                {
+                    index = newIndex;
+                    document.Slideshow.src = images[index];
+                }
+            }
+//      ]]>
+    </script>
+</head>
+<body bgcolor="black" onload='WindowLoaded(event);'>
+    <p align="center">
+        <br/>
+        <br/>
+        <img name="Slideshow" alt="" src="CPS-Forum-2009_files/CPS-Forum-2009.001.jpg" onclick="Step(1)"/>
+        <br/>
+        <br/>
+        <input type="image" src="CPS-Forum-2009_files/home.png" onclick="GoTo(0)"/>
+        &nbsp;&nbsp;&nbsp;
+        <input type="image" src="CPS-Forum-2009_files/prev.png" onclick="Step(-1)"/>
+        <input type="image" src="CPS-Forum-2009_files/next.png" onclick="Step(1)"/>
+    </p>
+</body>
+</html>
